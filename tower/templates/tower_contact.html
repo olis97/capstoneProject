@@ -1,0 +1,37 @@
+<!--Extend Base File-->
+{% extends 'shared/tower_base.html' %}
+
+<!--Set Page-->
+{% block active_page %}towerContact{% endblock %}
+
+<!--Set Page Title-->
+{% block title %}Get in Touch - OLIS Integrated LLC{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="row g-2">
+    <p class="display-6 fw-medium ms-2 mb-0">Contact Us - Send a Message</p>
+    <p class="fs-5 lead ms-2 mt-0"><small><em>Got a question? <b>One of our call centers will assist you shortly after you have sent your message</b></em></small></p>
+    <div class="col-12">     
+        <a href="mailto:DOES-NOT-EXIST-YET@domain.com" class="btn btn-info">Use email rather?</a>
+        <a href="tel:+1234567890" class="btn btn-secondary">Need to call us?</a>        
+        <hr>
+    </div>
+    <div class="container p-2">
+        <p class="fs-4 fw-medium">Please fill the form below with your email and enquiry!</p>
+        <form class="form-control">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your <em>friendly</em> enquiry</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <input type="submit" class="btn btn-success" value="Send Message">
+        </form>
+        
+    </div>
+</div>
+{% endblock %}

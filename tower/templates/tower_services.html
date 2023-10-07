@@ -1,0 +1,149 @@
+<!--Extend Base File-->
+{% extends 'shared/tower_base.html' %}
+
+<!--Set Page-->
+{% block active_page %}services{% endblock %}
+
+<!--Set Page Title-->
+{% block title %}Services - OLIS Integrated LLC{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="row justify-content-start g-2">    
+    <p class="display-6 fw-medium ms-2 mb-0">Services & Solutions - Personal & Enterprise</p>
+    <p class="fs-5 lead ms-2 mt-0"><small><em>Versatile & Cutting Edge, Our Services are Trusted by Many Happy Clients...</em></small></p>
+    <div class="col-12">     
+        <a href="#network" class="btn btn-outline-primary">Network</a>
+        <a href="#power" class="btn btn-outline-primary">Power</a>
+        <a href="#specialized" class="btn btn-outline-primary">Specialized</a>
+        <hr>
+    </div>
+   
+    <!--Network Hardware & Infrastructure Services-->
+    <div class="col-12" id="network">
+        <!--Network Services Heading-->
+        <p class="fs-2 fw-bold text-white"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-hdd-network" viewBox="0 0 16 16">
+                <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2V4zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1zm6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5z"/>
+              </svg> Network Hardware & Infrastructure</p>
+        <!--Network Services Caption-->
+        <p class="fs-5 lead ms-2">
+            Explore our array of services that revolve around network hardware and infrastructure, ensuring seamless connectivity
+        </p>
+        <!--Network Services List-->
+        <div class="list-group">
+            <!--Sale & Support-->
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Sales & Support</h5>
+                    <small><span class="badge bg-info text-black">Networking Hardware</span></small>
+                </div>
+                <p class="mb-1">Comprehensive sales and support for a wide range of products including Switches, Routers, EHWIC WAN Cards, E1 Cards, and more.</p>
+            </a>
+            <!--Local Area Network-->
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Structured Local Area Network Cabling and Support</h5>
+                    <small class="text-body-secondary"><span class="badge bg-info text-black">Network Infrastructure</span></small>
+                </div>
+                <p class="mb-1">Design, implementation, and support for structured cabling systems, catering to Data, Voice, and UPS requirements.</p>              
+            </a>
+            <!--Fibre Optics-->
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Fibre Optic Services</h5>
+                    <small class="text-body-secondary"><span class="badge bg-info text-black">Optical Connectivity</span></small>
+                </div>
+                <p class="mb-1">Comprehensive Fibre Optic services, including cable laying, splicing, and precise termination for enhanced connectivity.</p>
+            </a>
+            <!--Wireless Radio-->
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Wireless Radio Links and Access Connectivity</h5>
+                    <small class="text-body-secondary"><span class="badge bg-info text-black">Wireless Solutions</span></small>
+                </div>
+                <p class="mb-1">Efficiently providing wireless radio links and seamless access connectivity solutions for improved network integration.</p>
+            </a>            
+        </div>  
+        <hr>      
+    </div>
+  
+    <!--Power Infrastructure Services-->
+    <div class="col-md-6 col-12" id="power">
+        <!--Power Services Heading-->
+        <p class="fs-2 fw-bold text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-plug" viewBox="0 0 16 16">
+                <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0zM5 4v2.5A2.5 2.5 0 0 0 7.5 9h1A2.5 2.5 0 0 0 11 6.5V4H5z"/>
+              </svg> Power Infrastructure</p>
+        <!--Power Services Caption-->
+        <p class="fs-5 lead ms-2">
+            Unlock the potential of power infrastructure solutions tailored for both personal and enterprise requirements        </p>
+        <!--Power Services List-->
+        <div class="list-group">
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Lightning and Surge Protection Systems</h5>
+                    <small class="text-body-secondary"><span class="badge bg-success text-black">Safety & Reliability</span></small>
+                </div>
+                <p class="mb-1">Advanced protection systems against lightning and surges, ensuring safety and maintaining system reliability.</p>
+            </a>
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Electrical Wiring and Power Systems</h5>
+                    <small class="text-body-secondary"><span class="badge bg-success text-black">Power Infrastructure</span></small>
+                </div>
+                <p class="mb-1">Expert electrical wiring solutions and reliable power systems for seamless operations.</p>
+            </a>
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Inverters, UPS, and Solar Power Systems</h5>
+                    <small class="text-body-secondary"><span class="badge bg-success text-black">Energy Solutions</span></small>
+                </div>
+                <p class="mb-1">Cutting-edge solutions including inverters, UPS systems, and solar power installations for efficient energy usage.</p>
+            </a>
+        </div>
+    </div>
+
+    <!--Specialized & Enterprise Services-->
+    <div class="col-md-6 col-12" id="specialized">
+        <!--Specialized Services Heading-->
+        <p class="fs-2 fw-bold text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+                <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"/>
+                <path d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z"/>
+              </svg> Specialized & Enterprise</p>
+        <!--Specialized Services Caption-->
+        <p class="fs-5 lead ms-2">
+            Delve into our specialized services designed to meet the demands of both individual and enterprise clientele        </p>
+        <!--Specialized Services List-->
+        <div class="list-group">
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">CCTV Surveillance and Access Control Systems</h5>
+                    <small class="text-body-secondary"><span class="badge bg-success text-black">Security Solutions</span></small>
+                </div>
+                <p class="mb-1">Complete solutions for CCTV surveillance and advanced access control systems to enhance security measures.</p>
+            </a>
+
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Telecom Mast and Towers Design, Construction, and Maintenance</h5>
+                    <small class="text-body-secondary"><span class="badge bg-success text-black">Infrastructure</span></small>
+                </div>
+                <p class="mb-1">End-to-end services encompassing the design, construction, and maintenance of reliable telecom masts and towers.</p>
+            </a>
+           
+            <a href="{% url 'tower:tower_contact' %}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Procurement & Consultancy Services</h5>
+                    <small class="text-body-secondary"><span class="badge bg-success text-black">Business Support</span></small>
+                </div>
+                <p class="mb-1">Comprehensive procurement services and expert consultancy to guide your business towards success.</p>
+            </a>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

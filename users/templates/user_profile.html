@@ -1,0 +1,32 @@
+<!--Extend Layout Page-->
+{% extends 'shared/user_base.html' %}
+
+{% block name %}Users{% endblock %}
+
+{% block title %}User - Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row g-2">
+        <div class="col">
+            <p class="fs-5 mb-0 fw-light"><em>First Name:</em></p>
+            <p class="fs-3 mt-0 fw-medium text-wrap">{{ firstname }}</p>
+        </div>
+        <div class="col">
+            <p class="fs-5 mb-0 fw-light"><em>Last Name:</em></p>
+            <p class="fs-3 mt-0 fw-medium text-wrap">{{ lastname }}</p>
+        </div>
+        <div class="col">
+            <p class="fs-5 mb-0 fw-light"><em>Email Address:</em></p>
+            <p class="fs-3 mt-0 fw-medium text-wrap">{{ email }}</p>
+        </div>   
+        <div class="col-12">
+            <a href="{% url 'users:delete' %}" class="btn btn-outline-danger">Delete Account</a>
+        </div>        
+    </div>
+
+    <div class="mt-2">
+    </div>
+</div>
+
+{% endblock %}

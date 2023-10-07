@@ -1,0 +1,69 @@
+<!--Extend Base File-->
+{% extends 'shared/tower_base.html' %}
+
+<!--Set Page-->
+{% block active_page %}home{% endblock %}
+
+<!--Set Page Title-->
+{% block title %}Welcome - OLIS Integrated LLC{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="row g-2">
+    <p class="display-6 fw-medium ms-2 mb-0">Welcome To Your ICT & Power Infrastructure Solution!</p>
+    <p class="fs-5 lead ms-2 mt-0"><small><em>Dive into our world of innovation and performance...</em></small></p>
+    <div class="col-12">     
+        <a href="{% url 'tower:tower_services' %}" class="btn btn-outline-primary">Network Services</a>
+        <a href="{% url 'tower:tower_services' %}" class="btn btn-outline-primary">Power Infrastructure</a>
+        <a href="{% url 'tower:tower_services' %}" class="btn btn-outline-primary">Specialized Enterprise</a>
+        <hr>
+    </div>
+    <div class="col">
+        <p class="fs-2 fw-bold text-white mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+            </svg> Innovating a New Era
+            <p class="fs-4 lead ms-1">
+                At <b>OLIS Integrated LLC</b> a new era is emerging, where excellence thrives and innovation reigns. At our core, we are not merely service providers;
+                we are architects of transformation. Join us in shaping an IT and Power landscape that defies norms and envisions the
+                extraordinary.
+            </p>
+        </p> 
+
+        <p class="fs-2 fw-bold text-white mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
+                <path d="M8 4.5a7 7 0 0 0-7 7 .5.5 0 0 1-1 0 8 8 0 1 1 16 0 .5.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 .5.5 0 0 1-1 0 4 4 0 1 1 8 0 .5.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 4 0 .5.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+            </svg> Expertise Unveiled
+            <p class="fs-5 ms-1">
+                Unveil a spectrum of expertise that transcends boundaries. Our services echo the precision of Cisco Systems; a realm
+                encompassing Sales and Support, which includes Switches, Routers, EHWIC WAN Cards, E1 Cards, and more. Embark on a
+                journey with us into the intricate world of Structured Local Area Network Cabling, where Data, Voice, and UPS converge
+                to define seamless communication pathways. Traverse the realm of Fibre Optic Services, where precision meets innovation
+                in Laying, Splicing, and Termination.
+            </p>
+            <p class="fs-5 ms-1">
+                Experience the future of connectivity through Wireless Radio Links and Access Connectivity, while your security is
+                fortified by our expertise in CCTV Surveillance and Access Control Systems. Behold our mastery in Telecom Mast and
+                Towers design, construction, and Maintenance, elevating communication infrastructure to new heights. Witness the
+                resilience of Lightning and Surge Protection Systems, embrace the brilliance of Electrical Wiring and Power Systems, and
+                harness the potential of Inverters, UPS, and Solar Power Systems. To top it off, immerse yourself in our Procurement &
+                Consultancy Services, a fusion of strategic insights and impeccable solutions..
+            </p>
+        </p> 
+
+        <p class="fs-2 fw-bold text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-pip" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                <path d="M8 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-3z"/>
+            </svg> Efficiency Envisioned
+            <p class="fs-5 ms-1">
+                Efficiency is our mantra. We are on a relentless mission to redefine efficiency in every way possible. By embracing
+                cost-effective approaches without compromise, we ensure reliability and unswerving efficiency. Our goal is simple yet
+                profound: to not only meet but transcend client expectations. We achieve this by crafting value that transforms systems
+                into high-functioning powerhouses of operational brilliance
+            </p>
+        </p>  
+    </div>
+</div>
+{% endblock %}

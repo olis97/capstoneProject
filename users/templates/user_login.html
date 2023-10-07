@@ -1,0 +1,29 @@
+<!--Extend Layout Page-->
+{% extends 'shared/user_base.html' %}
+
+{% block name %}Users{% endblock %}
+
+{% block title %}User - Login{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <form action="{% url 'users:auth' %}" class="form-control" method="post">
+    {% csrf_token %}        
+        <div class="row g-2">
+            <div class="col-12">Login Form</div>            
+            <div class="col-md-6 col-12">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>   
+            <div class="col-12">
+                <input type="submit" class="btn btn-outline-success" value="Login">
+                <a href="{% url 'users:signup' %}" class="btn btn-outline-info btn-sm">Not Registered Yet?</a>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
