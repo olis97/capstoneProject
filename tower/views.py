@@ -18,6 +18,17 @@ def tower_about(request):
     return render(request, 'tower_about.html', {'current_page': 'about'})
 
 def tower_contact(request):
+    """
+    Shows contact page.
+
+    renders: tower_contact.html
+
+    :param request: request
+    :type request: str
+
+    :return: Rendered HTML Webpage - current_page : contact 
+    :rtype: WebPage
+    """
     return render(request, 'tower_contact.html', {'current_page': 'contact'})
 
 def tower_home(request):    
