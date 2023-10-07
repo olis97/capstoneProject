@@ -1,4 +1,7 @@
 # Byte-compiled / optimized / DLL files
+# Ignore Django Generated Files
+__pycache__
+db.sqlite3
 __pycache__/
 *.py[cod]
 *$py.class
