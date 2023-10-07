@@ -5,12 +5,13 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-# Imports
+
 import os
 import sys
-
-# Set root dir for Sphinx to look for DOCSTRINGs
+import django
 sys.path.insert(0, os.path.abspath('..'))
+os.environ['DJANGO_SETTINGS_MODULE'] = 'capstoneProject.settings'
+django.setup()
 
 project = 'capstoneProject'
 copyright = '2023, ISMAIL'
