@@ -22,16 +22,25 @@ Follow these steps to set up your development environment:
 
 2. Create a virtual environment and activate it:
 
+   ```bash
+   python -m virtualenv venv
    ```
-   python -m venv venv
+
+   ```bash
    cd venv/scripts
-   then activate
+   activate
    ```
    
 3. Install the required Python packages inside your virtual environment:
 
-   ```
+   ```bash
    pip install -r requirements.txt
+   ```
+
+4. Run Django web server using localhost:
+
+   ```bash
+   python manage.py runserver
    ```
 
 ## Running Capstone Project Website
@@ -40,13 +49,13 @@ Use Docker to run the Django website. Follow these steps:
 
 1. Build the Docker image from the provided Dockerfile:
 
-   ```
+   ```bash
    docker build -t capstone-project .
    ```
 
 2. Start a Docker container with the website:
 
-   ```
+   ```bash
    docker run -d -p 8000:8000 capstone-project
    ```
 
